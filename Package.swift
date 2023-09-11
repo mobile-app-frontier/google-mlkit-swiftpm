@@ -14,7 +14,7 @@ let package = Package(
       targets: ["MLKitFaceDetection", "MLImage", "MLKitVision", "Common"]),
     .library(
       name: "MLKitSegmentationSelfie",
-      targets: ["MLKitSegmentationSelfie", "MLImage", "MLKitVision", "Common"]),
+      targets: ["MLKitSegmentationSelfie", "MLKitSegmentationCommon", "MLKitXenoCommon", "MLImage", "MLKitVision", "Common"]),
   ],
   dependencies: [
     .package(url: "https://github.com/google/promises.git", from: "2.1.1"),
@@ -26,6 +26,8 @@ let package = Package(
   targets: [
     .binaryTarget(name: "MLImage", url: "https://github.com/d-date/google-mlkit-swiftpm/releases/download/3.2.0/MLImage.xcframework.zip", checksum: "d360820204628a8d6d9a915d0bd9ed78aec6ed0eeed7c84c1e78bd85909bbe37"),
     .binaryTarget(name: "MLKitSegmentationSelfie", path: "MLKitSegmentationSelfie.xcframework"),
+    .binaryTarget(name: "MLKitSegmentationCommon", path: "MLKitSegmentationCommon.xcframework"),
+    .binaryTarget(name: "MLKitXenoCommon", path: "MLKitXenoCommon.xcframework"),
     .binaryTarget(
       name: "MLKitBarcodeScanning", url: "https://github.com/d-date/google-mlkit-swiftpm/releases/download/3.2.0/MLKitBarcodeScanning.xcframework.zip", checksum: "93cf8f4cbda516f0db4895e951a9430e07f8b3d44b55d2193fbd079e27d2f5fa"),
     .binaryTarget(name: "MLKitCommon", url: "https://github.com/d-date/google-mlkit-swiftpm/releases/download/3.2.0/MLKitCommon.xcframework.zip", checksum: "50e1c24fc66b9a5b0516dccee5a27bca226e4f41f661799fc96873b572b51417"),
