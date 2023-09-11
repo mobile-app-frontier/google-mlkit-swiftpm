@@ -25,9 +25,16 @@ let package = Package(
   ],
   targets: [
     .binaryTarget(name: "MLImage", url: "https://github.com/d-date/google-mlkit-swiftpm/releases/download/3.2.0/MLImage.xcframework.zip", checksum: "d360820204628a8d6d9a915d0bd9ed78aec6ed0eeed7c84c1e78bd85909bbe37"),
-    .binaryTarget(name: "MLKitSegmentationSelfie", path: "MLKitSegmentationSelfie.xcframework"),
-    .binaryTarget(name: "MLKitSegmentationCommon", path: "MLKitSegmentationCommon.xcframework"),
-    .binaryTarget(name: "MLKitXenoCommon", path: "MLKitXenoCommon.xcframework"),
+    .binaryTarget(name: "MLKitSegmentationSelfie",
+                  url:"https://github.com/mobile-app-frontier/google-mlkit-swiftpm/releases/download/3.2.4/MLKitSegmentationSelfie.xcframework.zip",
+                  checksum: "2c65cc8f1c6daf8ca569b2f8188525e7f33b6ec695ba8aedf6281b4626b56cb5"),
+    
+    .binaryTarget(name: "MLKitSegmentationCommon",
+                  url:"https://github.com/mobile-app-frontier/google-mlkit-swiftpm/releases/download/3.2.4/MLKitSegmentationCommon.xcframework.zip",
+                  checksum: "6ab11083619ec9f80d57baa32d37237b670646d8de1605a83dcb18bc0a63cc5a"),
+    .binaryTarget(name: "MLKitXenoCommon",
+                  url:"https://github.com/mobile-app-frontier/google-mlkit-swiftpm/releases/download/3.2.4/MLKitXenoCommon.xcframework.zip",
+                  checksum: "60e444631baab77c28c9c1b895ea9b94b59b359889bffce150f49e5e8fadd512"),
     .binaryTarget(
       name: "MLKitBarcodeScanning", url: "https://github.com/d-date/google-mlkit-swiftpm/releases/download/3.2.0/MLKitBarcodeScanning.xcframework.zip", checksum: "93cf8f4cbda516f0db4895e951a9430e07f8b3d44b55d2193fbd079e27d2f5fa"),
     .binaryTarget(name: "MLKitCommon", url: "https://github.com/d-date/google-mlkit-swiftpm/releases/download/3.2.0/MLKitCommon.xcframework.zip", checksum: "50e1c24fc66b9a5b0516dccee5a27bca226e4f41f661799fc96873b572b51417"),
